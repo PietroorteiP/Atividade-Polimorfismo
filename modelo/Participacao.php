@@ -2,19 +2,18 @@
 
 require_once("Instrumento.php");
 
-class Participacao extends Instrumento{
+class Participacao extends Instrumento
+{
     //Atributos
-    
+
     //Métodos
-    public function getNotaFinal(){
-        return parent::nota;
-
-         if($this->nota > 10){
+    public function getNotaFinal(): float
+    {
+        $notaf = $this->nota;
+        if ($notaf > 10) {
             return 10;
-        else{
-            return nota;
+        } else {
+            return $notaf;
         }
-        }
-
     }
 }
