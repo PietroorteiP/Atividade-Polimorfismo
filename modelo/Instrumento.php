@@ -1,14 +1,14 @@
 <?php
 
-class Instrumento{
-    //Atributos
+class Instrumento
+{
+    // Atributos
+    protected float $nota;
 
-    protected float $nota
-
-    //Métodos
-
-    public function getNotaFinal(){
-        
+    // Métodos
+    public function getNotaFinal(): float
+    {
+        return $this->nota;
     }
 
     public function getNota(): float
@@ -19,7 +19,6 @@ class Instrumento{
     public function setNota(float $nota): self
     {
         $this->nota = $nota;
-
         return $this;
     }
 }
